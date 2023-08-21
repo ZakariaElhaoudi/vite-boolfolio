@@ -14,8 +14,8 @@ export default {
 </script>
 
 <template>
-  <div>
-    <h1>hello world!</h1>
+  <div class="container-fluid text-center">
+    <h1>Projects</h1>
   </div>
   <Projects />
 </template>
