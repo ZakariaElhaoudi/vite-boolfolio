@@ -3,7 +3,6 @@ import axios from 'axios';
 import { onMounted } from 'vue';
 
 export default {
-  // name: 'Projects',
   data: function () {
     return {
       projects: []
@@ -30,19 +29,22 @@ export default {
 </script>
 
 <template>
-  <div class="container bg-dark">
-    <div class="row">
-      <div class="col-md-4 my-4" v-for="project in projects" :key="project.id">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">{{ project.name }}</h3>
-            <h5 class="card-subtitle mb-2 text-muted">{{ project.author }}</h5>
-            <p class="card-text">{{ project.description }}</p>
+  <div class="container-fluid text-center">
+    <h1>Projects</h1>
+    <div class="container bg-dark">
+      <div class="row">
+        <div class="col-md-4 my-4" v-for="project in projects" :key="project.id">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">{{ project.name }}</h3>
+              <h5 class="card-subtitle mb-2 text-muted">{{ project.author }}</h5>
+              <p class="card-text">{{ project.description }}</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
 </template>
 

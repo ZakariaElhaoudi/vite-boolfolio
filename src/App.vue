@@ -1,10 +1,9 @@
 <script>
 import axios from 'axios';
-import Projects from './components/Projects.vue'
-
+import AppHeader from './components/AppHeader.vue'
 export default {
   components: {
-    Projects
+    AppHeader
   },
   data: function () {
     return {
@@ -14,10 +13,8 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid text-center">
-    <h1>Projects</h1>
-  </div>
-  <Projects />
+  <AppHeader />
+  <router-view></router-view>
 </template>
 
 <style scoped></style>
